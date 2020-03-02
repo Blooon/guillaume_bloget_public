@@ -1,0 +1,1439 @@
+/*-------------- Fonts --------------*/
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url(fonts/NeueHaasUnicaW06-MediumRegular.ttf) format("truetype");
+}
+
+
+/*-------------- Global --------------*/
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: white;
+    font-family: 'Neue Haas Unica' !important;
+    color: black !important;
+    line-height: 29px !important;
+    font-size: 32px !important;
+}
+
+main {
+    margin-top: 103px;
+    padding: 10px 10px;
+}
+
+input {
+    margin-bottom: 10px !important;
+}
+
+button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+button u, u {
+    text-decoration: none;
+}
+
+i {
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Neue Haas Unica' !important;
+}
+
+a:hover {
+    color: black;
+}
+
+.underhover u {
+    text-decoration: none;
+}
+
+.underhover u:hover {
+    text-decoration: underline;
+}
+
+/* Responsive global */
+
+.hide-lm {
+    display: block;
+}
+
+@media (max-width:1280px) {
+    .hide-lm {
+        display: none !important;
+    }
+}
+
+.show-lm {
+    display: none;
+}
+
+@media (max-width:1280px) {
+    .show-lm {
+        display: block;
+    }
+}
+
+@media (max-width:1920px) {
+    main {
+        margin-top: 61px;
+        padding: 20px 20px;
+    }
+
+    body {
+        line-height: 21px !important;
+        font-size: 19px !important;
+    }
+}
+
+@media (max-width:720px) {
+    main {
+        margin-top: 102px;
+    }
+}
+
+@media (max-width:359px) {
+    main {
+        margin-top: 123px;
+    }
+}
+
+
+/*-------------- Navigation --------------*/
+
+/* Navbar */
+
+.navbar {
+    font-size: 32px;
+    background-color: white;
+    padding: 10px !important;
+}
+
+.navbar .container-fluid {
+    padding: 0px !important;
+}
+
+.nav .navbar-text {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.nav-lang button {
+    padding: 0px !important;
+}
+
+.nav-basket {
+    padding-right: 0px !important;
+}
+
+.nav-basket button {
+    padding: 0px !important;
+}
+
+.navbar-header a {
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 0px !important;
+    margin-right: 32px;
+}
+
+.nav {
+    flex-direction: row !important;
+}
+
+.nav li {
+    padding: 0px 16px;
+}
+
+.nav li a {
+    color: black;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.nav li button:hover {
+    text-decoration: underline;
+}
+
+/* Basket */
+
+.basket-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.basket-button img {
+    width: 37px;
+}
+
+.basket-button b {
+    font-weight: normal;
+    padding-bottom: 2px;
+    font-size: 21px;
+}
+
+/* Responsive navigation */
+
+@media (max-width:1920px) {
+    .navbar {
+        font-size: 19px;
+        line-height: 21px;
+        background-color: white;
+        padding: 20px !important;
+    }
+
+    .navbar-header a {
+        color: black;
+        text-decoration: none;
+        font-size: 19px;
+        line-height: 21px;
+        padding: 0px !important;
+        margin-right: 21px;
+    }
+
+    .nav li {
+        padding: 0px 10.5px;
+    }
+
+    .basket-button img {
+        width: 28px;
+    }
+
+    .basket-button b {
+        font-weight: normal;
+        padding-bottom: 2px;
+        font-size: 14px;
+    }    
+}
+
+@media (max-width:992px) {
+   .container-fluid {
+       padding: 0px !important;
+    }
+
+    .nav-lang {
+        padding-left: 0px !important;
+    }
+
+    .nav-lang button {
+        padding: 0px !important;
+    }
+
+    .basket-button {
+        padding: 0px !important;
+    }
+}
+
+@media (max-width:720px) {
+    .navbar-header {
+        min-width: 680px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .navbar-header {
+        min-width: 0;
+        padding-bottom: 20px;
+    }
+
+    .last-brand {
+        margin-right: 0px !important;
+    }
+}
+
+@media (max-width:374px) {
+    .nav li {
+        padding: 0px 7.5px;
+    }
+}
+
+/*-------------- Home (Projects) --------------*/
+
+#Home {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 100px;
+}
+
+#Home h1 {
+    font-weight: normal;
+    font-family: 'Neue Haas Unica' !important;
+    font-style: italic;
+    font-size: 32px;
+}
+
+#Home button:hover {
+    text-decoration: underline;
+}
+
+.home-project {
+    padding-top: 166px;
+}
+
+.project-slideshow {
+    max-width: 63.15%;
+}
+
+.project-caption {
+    z-index: 100;
+    max-width: 63.15%;
+}
+
+.project-caption p, .project-caption h1 {
+    margin-bottom: 0px;
+    margin-top: 7px;
+    display: inline;
+}
+
+.project-caption button {
+    display: inline;
+}
+
+@media (max-width:1920px) {
+    #Home h1 {
+        font-size: 19px;
+    }
+
+    .project-slideshow {
+        max-width: 60%;
+    }
+
+    .home-project {
+        padding-top: 121px;
+    }
+
+    .project-caption {
+        max-width: 60%;
+    }
+}
+
+@media (max-width:992px) {
+    #Home {
+        margin-top: 61px;
+    }
+
+    .home-project {
+        padding-top: 60px;
+    }
+
+    #Home .home-project:first-of-type {
+        padding-top: 30px !important;
+    }
+
+    .project-slideshow {
+        max-width: 100%;
+    }
+
+    .project-caption {
+        max-width: 100%;
+    }
+
+    .project-caption p, .project-caption h1 {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:720px) {
+    #Home {
+        margin-top: 102px;
+    }
+}
+
+@media (max-width:359px) {
+    #Home {
+        margin-top: 123px;
+    }
+}
+
+
+/*-------------- Index --------------*/
+
+#Index {
+    margin-top: 23.5%;
+}
+
+.index-margin-bot {
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.index-cover {
+    padding: 1% 1%;
+}
+
+.index-project h1, .index-project p {
+    color: black;
+    font-family: 'Neue Haas Unica';
+    font-size: 32px;
+    line-height: 29px;
+    margin: 0px 0px;
+}
+
+.index-title {
+    margin: 1%;
+}
+
+.index-project img {
+    width: 100%;
+    height: auto;
+}
+
+.index-project img:hover {
+    opacity: 0.73;
+}
+
+/* Responsive index */
+
+@media (max-width:1920px) {
+    #Index {
+        margin-top: 23%;
+    }
+
+    .index-project h1, .index-project p {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .index-margin-bot {
+        height: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    #Index {
+        margin-top: 61px; 
+    }
+}
+
+@media (max-width:720px) {
+    #Index {
+        margin-top: 102px;
+    }
+}
+
+
+/*-------------- About --------------*/
+
+#About section {
+    max-width: 63.15%;
+}
+
+#About article {
+    padding-bottom: 64px;
+}
+
+#About article h1 {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+    text-decoration: underline;
+}
+
+#About article p {
+    font-size: 32px;
+    font-family: 'Neue Haas Unica' !important;
+    text-decoration: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#About article h2 {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+    text-decoration: underline;
+}
+
+#Credits p {
+    margin-bottom: 64px !important;
+}
+
+#About a {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+    text-decoration: none;
+}
+
+#About a:hover {
+    color: black;
+}
+
+
+@media (max-width:1920px) {
+    #About section {
+        max-width: 60%;
+    }
+    
+    #About article {
+        padding-bottom: 42px;
+    }
+
+    #About article h1 {
+        margin-top: 0px;
+        margin-bottom: 21px;
+        font-size: 19px;
+        line-height: 21px;
+        font-family: 'Neue Haas Unica' !important;
+        text-decoration: underline;
+    }
+    
+    #About article p {
+        font-size: 19px;
+        line-height: 21px;
+    }
+    
+    #About article h2 {
+        font-size: 19px;
+        line-height: 21px;
+    }
+    
+    #Credits p {
+        margin-bottom: 42px !important;
+    }
+    
+    #About a {
+        font-size: 19px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width:992px) {
+    #About section {
+        max-width: 100%;
+    }
+}
+
+
+/*-------------- Shop (Items) --------------*/
+
+#Shop {
+    margin-top: 13%;
+}
+
+/* Responsive shop */
+
+@media (max-width:992px) {
+    
+    #Shop {
+        margin-top: 61px; 
+    }
+
+    #Shop .index-project {
+        float: left !important;
+    }
+}
+
+@media (max-width:720px) {
+    #Shop {
+        margin-top: 102px;
+    }
+}
+
+
+/*-------------- Item --------------*/
+
+#Item {
+    margin-top: 160px;
+}
+
+.item-slideshow {
+    max-width: 63.5%;
+}
+
+.item-description {
+    padding-left: 30px;
+    max-width: 562px;
+}
+
+.item-description h1 {
+    margin: 0px;
+    text-decoration: underline;
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+}
+
+.item-description p {
+    margin-bottom: 32px;
+}
+
+.item-description button {
+    padding: 0px;
+}
+
+.item-description button:hover {
+    text-decoration: underline;
+}
+
+.item-description .underhover a {
+    cursor: pointer;
+}
+
+.color-boxes {
+    margin-bottom: 32px;
+}
+
+.color-boxes p {
+    margin-bottom: 8px;
+}
+
+.color-box {
+    width: 54px;
+    height: 54px;
+    margin-right: 8px;
+}
+
+.color-box:hover {
+    cursor: pointer;
+}
+
+@media (max-width:1920px) {
+    #Item {
+        margin-top: 121px;
+    }
+
+    .item-slideshow {
+        max-width: 65%;
+    }
+
+    .item-description {
+        padding-left: 20px;
+        max-width: 26%;
+    }
+
+    .item-description h1 {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .item-description p {
+        margin-bottom: 21px;
+    }
+
+    .color-boxes {
+        margin-bottom: 21px;
+    }
+
+    .color-boxes p {
+        margin-bottom: 5px;
+    }
+
+    .color-box {
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+    }    
+}
+
+@media (max-width:992px) {
+    #Item {
+        margin-top: 61px;
+    }
+
+    .item-slideshow {
+        max-width: 100%;
+    }
+
+    .item-description {
+        padding-left: 0px;
+        max-width: 100%;
+    }
+
+    .item-description p {
+        max-width: 100%;
+    }
+
+    .item-price {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .color-boxes {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .color-boxes p {
+        margin-bottom: 15px;
+    }
+
+    .color-box {
+        margin-bottom: -4px;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width:720px) {
+    #Item {
+        margin-top: 102px;
+    }
+}
+
+@media (max-width:359px) {
+    #Item {
+        margin-top: 123px;
+    }
+}
+
+
+/*-------------- Slideshow --------------*/
+
+.prev {
+    cursor: url(pictos/arrowL.png) 16 16, pointer;
+}
+
+.next {
+    cursor: url(pictos/arrowR.png) 16 16, pointer;
+}
+
+.left {
+    cursor: url(pictos/arrowL.png) 16 16, pointer;
+}
+
+.right {
+    cursor: url(pictos/arrowR.png) 16 16, pointer;
+}
+
+.animate-left {
+    position: relative;
+    animation: animateleft 1s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 1
+    } to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.animate-right {
+    position: relative;
+    animation: animateright 1s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 1
+    } to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.slideshow {
+    overflow: hidden;
+    max-height: 583px;
+}
+
+.slideshow-inner {
+    overflow: hidden;
+}
+
+.slideshow-inner {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.slide img {
+    height: 100%;
+    width: auto;
+}
+
+.item-slideshow .slide img {
+    float: right;
+}
+
+@media (max-width:992px) {
+    .item-slideshow .slide img {
+        width: 100%;
+        /* height: auto; */
+    }    
+}
+
+
+/*-------------- Shopping cart (Payements - Step 1) --------------*/
+
+/* Table */
+
+#Basket {
+    margin-bottom: 60px;
+    width: 70%;
+}
+
+/* Headings */
+
+#Headings {
+    border-bottom: 2px solid black;
+}
+
+#Headings th {
+    font-weight: normal;    
+}
+
+.product {
+    padding-left: 0px !important;
+}
+
+.quantity {
+    text-align: center !important;
+}
+
+/* Item row */
+
+.basket-row td {
+    vertical-align: middle !important;
+    width: 33%;
+}
+
+.basket-product {
+    position: relative;
+}
+
+.basket-item {
+    text-align: center;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    padding-left: 104px;
+}
+
+.remove-button {
+    position: absolute !important;
+    top: 40%;
+    padding: 0;
+    padding-left: 16px;
+    color: black;
+    cursor: pointer;
+    border: 0px;
+    z-index: 100;
+}
+
+.remove-button img {
+    width: 32px;
+    height: 32px;
+}
+
+.basket-item img {
+    width: 342px;
+    height: 218px;
+}
+
+.basket-description {
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.basket-quantity input {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    -moz-appearance: textfield;
+}
+
+.basket-price p {
+    text-align: right;
+}
+
+/* Totals */
+
+#Basket-Total {
+    border-top: 2px solid black;
+}
+
+.basket-quantity {
+    text-align: center !important;
+}
+
+/* Next Step Button */
+
+#NextStep-Button {
+    width: 50%;
+    float: right;
+    margin-top: 48px;
+}
+
+.order-button:hover {
+    text-decoration: underline;
+}
+
+.disabled {
+    color: black !important;
+    cursor: default !important;
+}
+
+.disabled:hover {
+    text-decoration: none !important;
+}
+
+/* Responsive shoping cart */
+
+@media (max-width:1920px) {
+    .basket-item {
+        text-align: center;
+        margin-bottom: 28px;
+        margin-top: 28px;
+        padding-left: 51px;
+    }
+
+    .basket-item img {
+        width: 319px;
+        height: auto;
+    }
+
+    .remove-button {
+        top: 45%;
+        padding-left: 0px;
+    }
+
+    .remove-button img {
+        width: 19px;
+        height: 19px;
+    }
+
+    .basket-description {
+        font-size: 19px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width:992px) {
+    #Basket {
+        width: 100%;
+    }
+
+    .remove-button img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .basket-product {
+        padding: 15px 0px !important;
+    }
+
+    .basket-item {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .basket-item .item-sticker {
+        width: 310px;
+        height: auto;
+    }
+
+    .remove-button {
+        background: transparent;
+        padding: 5px;
+    }
+
+    .basket-description {
+        text-align: left;
+    }
+}
+
+@media (max-width:480px) {
+    .remove-button img {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+
+/*-------------- Order (Payements - Step 2) --------------*/
+
+#Order {
+    width: 70%;
+    padding: 20px 10px;
+}
+
+.billing-form {
+    padding-left: 0px !important;
+}
+
+.order-heading {
+    border-bottom: 2px solid black;
+}
+
+.order-bar {
+    border-bottom: 2px solid black;
+}
+
+.order-bar label {
+    margin-top: 14.5px;
+    margin-bottom: 15px;
+}
+
+.order-bar input, .order-bar select {
+    background-color: white;
+    margin: 6.5px 0px !important;
+    border: 0px;
+    height: 45.5px;
+    padding: 0px !important;
+}
+
+.order-bar select, .order-other-address select {
+    max-width: 50%;
+}
+
+.border-bottom {
+    border-bottom: 2px solid black !important;
+}
+
+.order-other-address input, .order-other-address select {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0px !important;
+    margin: 0px !important;
+}
+
+#Other-Address {
+    margin-top: 15px;
+}
+
+.order-item {
+    border-bottom: 2px solid black !important;
+    margin-top: 15px;
+    height: 165.5px;
+}
+
+.order-item-fig {
+    text-align: center;
+    width: 208px;
+    height: 133px;
+}
+
+.order-item-fig h1 {
+    font-size: 19px;
+    line-height: 19px;
+    margin: 0px;
+    text-decoration: underline !important;
+    text-align: center;
+}
+
+.order-item-detail {
+    text-align: right;
+}
+
+.order-item-price {
+    margin-top: 91px;
+}
+
+.total-bar {
+    border-bottom: 2px solid black !important;
+}
+
+.total-bar p {
+    margin: 15px 0px;
+}
+
+#Delivery-Time {
+    margin-top: 10.25px !important;
+}
+
+#Delivery-Time p {
+    font-size: 19px;
+    line-height: 19px;
+    margin: 0px;
+}
+
+.margin-bot {
+    margin-bottom: 10.25px !important;
+}
+
+.form-row {
+    margin: 0px !important;
+}
+
+.payment-heading p label {
+    margin-bottom: 0px !important;
+}
+
+.card-input {
+    padding: 10.75px 0px !important;
+}
+
+.order-cgv {
+    margin-top: 10.25px !important;
+    font-size: 19px;
+    line-height: 19px;
+    width: 100%;
+}
+
+.back-button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#card-errors {
+    font-size: 12px !important;
+}
+
+/* Responsive order */
+
+@media (max-width:1920px) {
+
+    .billing-form {
+        padding-left: 10px !important;
+    }
+
+    .order-item {
+        height: 165.5px;
+    }
+    
+    .order-bar input, .order-bar select {
+        height: 45.5px;
+    }
+
+    .order-item-title {
+        font-size: 19px;
+        line-height: 21px;
+        margin: 0px;
+        text-decoration: underline !important;
+        text-align: left;
+    }
+
+    .order-bar label {
+        margin-top: 18px;
+        margin-bottom: 18.75px;
+    }
+
+    #Order {
+        width: 85%;
+    }
+
+    .order-item-fig {
+        text-align: left;
+        width: 152px;
+        height: auto;
+    }
+
+    .order-item-amount {
+        vertical-align: middle;
+        margin-top: 32.5px;
+    }
+
+    #Delivery-Time {
+        margin-top: 15px !important;
+    }
+
+    #Delivery-Time p {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0px;
+    }
+
+    .order-cgv {
+        margin-top: 15px !important;
+        font-size: 14px;
+        line-height: 14px;
+        width: 100%;
+    }
+
+    .card-input {
+        padding: 18.5px 0px !important;
+    }
+
+    .margin-bot {
+        margin-bottom: 15.5px !important;
+    }
+
+    .total-bar p {
+        margin: 18.75px 0px;
+    }
+}
+
+@media (max-width:992px) {
+    #Order {
+        width: 100%;
+    }
+
+    .billing-form {
+        padding-right: 10px !important;
+    }
+
+    .order-recap {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .order-item {
+        height: 176.5px;
+    }
+
+    .order-item-amount {
+        vertical-align: middle;
+        margin-top: 104.5px;
+    }
+
+    .order-item-fig {
+        text-align: left;
+        width: 198px;
+        height: auto;
+    }
+}
+
+
+/*-------------- Receipt (Payements - Step 3) --------------*/
+
+#Receipt {
+    width: 70%;
+    padding: 20px 10px;
+}
+
+.order-bar p {
+    line-height: 40px;
+    overflow: auto;
+    overflow-y: hidden;
+    -ms-overflow-y: hidden;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    margin-top: 9px;
+    margin-bottom: 9.5px;
+}
+
+/* Responsive order */
+
+@media (max-width:1920px) {
+    #Receipt {
+        width: 85%;
+    }
+}
+
+@media (max-width:992px) {
+    #Receipt {
+        width: 100%;
+    }
+}
+
+
+/*-------------- Cookies --------------*/
+
+.cookies-alert {
+    padding: 10px;
+    background-color: transparent;
+    overflow: visible;
+    width: 100% !important;
+}
+
+.cookies-alert-inner {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.cookies-alert p {
+    font-size: 26px;
+    line-height: 29px;
+    margin: 0px;
+    max-width: 90%;
+    vertical-align: middle;
+}
+
+.cookies-alert button {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    font-size: 29px;
+    line-height: 29px;
+}
+
+@media (max-width:1920px) {
+    .cookies-alert p {
+        font-size: 14px;
+        line-height: 14px;
+        padding-bottom: 4px;
+    }
+
+    .cookies-alert button {
+        top: 35%;
+        right: 20px;
+        font-size: 16px;
+        line-height: 16px;
+    }   
+}
+
+
+/*-------------- Legal Notices --------------*/
+
+#Legal {
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+    margin: 64px 0px;
+}
+
+#Legal h1 {
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+#Legal h2 {
+    font-size: 32px;
+    line-height: 29px;
+    font-family: 'Neue Haas Unica' !important;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+#Legal p {
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+/* Responsive legal notices */
+
+@media (max-width:1920px) {
+    #Legal {
+        font-size: 19px;
+        line-height: 21px;
+        margin: 42px 0px;
+    }
+    
+    #Legal h1 {
+        font-size: 19px;
+        line-height: 21px;
+        margin-bottom: 21px;
+    }
+    
+    #Legal h2 {
+        font-size: 19px;
+        line-height: 21px;
+        margin-bottom: 21px;
+    }
+    
+    #Legal p {
+        margin-bottom: 21px;
+    }
+}
+
+
+/*-------------- Backoffice (   ) --------------*/
+
+#Admin {
+    position: relative;
+}
+
+.home-back {
+    font-family: 'Neue Haas Unica';
+    text-align: center;
+    font-weight: normal; 
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 29px;
+    margin: auto;
+    padding-bottom: 32px;
+}
+
+.nav-back {
+    margin-bottom: 32px !important;
+    margin: auto;
+}
+
+.disconnect {
+    margin-right: 32px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.helvetica {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 21px;
+    font-family: 'Neue Haas Unica';
+    padding-right: 15px;
+}
+
+.noto {
+    font-family: 'Neue Haas Unica';
+    font-weight: normal;
+    font-size: 32px;;
+}
+
+.text-back {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-back p, .text-back input {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-back {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.form-back {
+    width: 100%;
+}
+
+#Admin p {
+    margin-bottom: 5px;
+}
+
+/* Responsive backoffice */
+
+@media (max-width:1920px) {
+    .home-back {
+        font-size: 19px;
+        line-height: 21px;
+    }
+    
+    .helvetica {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .noto {
+        font-size: 19px;
+        line-height: 21px;
+    }
+}

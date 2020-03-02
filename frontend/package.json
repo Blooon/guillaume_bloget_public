@@ -1,0 +1,51 @@
+{
+  "name": "typologie",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3000/",
+  "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.12",
+    "braintree-web": "^2.32.1",
+    "env-cmd": "^8.0.2",
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.5.1",
+    "paypal-rest-sdk": "^1.8.1",
+    "react": "^16.7.0",
+    "react-async-script-loader": "^0.3.0",
+    "react-dom": "^16.7.0",
+    "react-over-scroll": "^2.0.0",
+    "react-paypal-express-checkout": "^1.0.5",
+    "react-responsive-carousel": "^3.1.47",
+    "react-router-dom": "^4.3.1",
+    "react-router-hash-link": "^1.2.1",
+    "react-scripts": "^2.1.8",
+    "react-scroll": "^1.7.10",
+    "react-scroll-into-view": "^1.5.0",
+    "react-slick": "^0.23.2",
+    "scroll-into-view-if-needed": "^2.2.20",
+    "smooth-scroll-into-view-if-needed": "^1.1.23",
+    "superagent": "^4.1.0"
+  },
+  "scripts": {
+    "copy_config": "cp ../main_config.js ./src/config.js && echo 'export default {adminComponents, Onces}' >> ./src/config.js",
+    "start": "npm run copy_config && env-cmd ../.env-dev  react-scripts start",
+    "build": "env-cmd ../.env-dev react-scripts build",
+    "build:prod": "env-cmd ../.env-prod react-scripts build",
+    "build:docker": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "export $(cat ../.env-prod | xargs) && node server_front.js",
+    "prod": "npm run killOld && npm run build:prod && npm run launchProd",
+    "launchProd": "export $(cat ../.env-prod | xargs) && nohup node server_front.js &!",
+    "killOld": "pkill -f 'node server_front.js'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

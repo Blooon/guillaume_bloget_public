@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  db_mongo:
+    image: mongo
+    ports:
+     - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: "1234"
+  # db:
+  #   image: mysql:5.7
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: "1234"
+      # MYSQL_DATABASE: guillaume
+
+  web:
+    build: .
+    command: npm run launch
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db_mongo
+    ports:
+      - "3001:3001"
+      - "5858:5858"
+    environment:
+      MONGO_HOST: db_mongo
+      MONGO_PASSWORD: "1234"
+      MONGO_LOGIN: root
+    # links:
+    #   - db
